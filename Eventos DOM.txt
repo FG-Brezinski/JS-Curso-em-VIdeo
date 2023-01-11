@@ -1,0 +1,61 @@
+---------------------------Eventos DOM ----------------------------------
+ 
+Enetos do DOM em uma div, é tudo oq pode acontecer em uma <div>
+
+Os mais comuuns são eventos de mouse
+
+Quando chea um mouse dentro da area da div se chama "mouseenter"
+
+Quando o mouse se move dentro da div se chama "mousemove"
+
+Quando eu clico e seguro com o mouse se chama "mousedown"
+
+Quando eu soltar o clique se chama "mouseup"
+
+Quando eu clico tem a ação de "click"
+
+Quando eu tirar o mouse de entro da div tenho o "mouseout"
+
+----------------------------------------Funções------------------------------------
+
+É um conjunto de codigos que só vão ser executadas só quando o evento aconteçer
+
+O primero passo para acontecer um evento é colocar ele entre um bloco ({})
+
+O bloco tem que ser nmeado como "function" + o nome da ação que o 
+codigo vai fazer e dois () na frente
+
+E vc tem a opção de colocar um parametro entre esses parenteses, pode ser 
+um ou mais parametros
+ 
+  
+Ex:
+
+function ação(parametros){
+
+Seu codigo ai
+
+}
+
+
+para manter seu Html mais limpo ao envez de usar
+
+<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja...
+    </div>
+
+
+Podemos usar o "addEventListener"
+
+ <div id="area">
+        interaja...
+    </div>
+
+    <script>
+         var a = window.document.getElementById('area')
+         a.addEventListener('click', clicar)
+         a.addEventListener('mouseenter', entrar)
+         a.addEventListener('mouseout', sair)
+
+
+CONTINUAR NO 21:05

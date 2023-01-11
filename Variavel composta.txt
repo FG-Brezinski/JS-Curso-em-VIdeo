@@ -1,0 +1,67 @@
+---------------------------- Variavel composta -------------------------------------
+
+Um arrey/vetor/variavel composta é uma variavel que tem varios elementos 
+ E cada elemento e composto por seu valor e por uma chave de indentificação.
+
+ Ex:
+ 
+ let num = [5, 3, 4]
+              ___________   
+             |_5_|_3_|_4_| 
+
+Para adicionar mais um numero ao meu vetor e apenas chamar  avariavel e escolher a posição desejada e adicionar o valor desejado.
+Ex:
+
+ let num = [5, 3, 4]
+ num[3] = 6
+              _0___1___2___3_   
+             |_5_|_3_|_4_|_6_|
+
+Para colocar automaticamente no ultimo lugar da variavel utilizasse o script push
+
+Ex:
+
+ let num = [5, 3, 4]
+ num[3] = 6
+ num.push(7)
+              _0___1___2___3___4_ 
+             |_5_|_3_|_4_|_6_|_7_|
+
+Para sabe o comprimento de um arrey e so usar o atributo .length
+
+Para colocar os elementos em ordem crescente basta usar o comando .sort()
+
+Ex:
+
+ let num = [5, 3, 4]
+ num[3] = 6
+ num.push(7)
+              _0___1___2___3___4_ 
+             |_5_|_3_|_4_|_6_|_7_|
+
+num.sort()
+
+              _0___1___2___3___4_ 
+             |_4_|_5_|_6_|_7_|_8_|
+
+PAra buscar um valor dentro do vetor se usa .indexOf()
+
+Ex:
+
+num.indexOf(7)
+
+              _0___1___2___3___4_ 
+             |_4_|_5_|_6_|_7_|_8_|
+
+No caso ele ira me retornar a posição "3" do meu vetor
+
+Se por acaso eu pesquisar um valor que não esteja no vetor ele retornará o valor -1
+
+Ex:
+
+num.indexOf(3)
+
+              _0___1___2___3___4_ 
+             |_4_|_5_|_6_|_7_|_8_|
+
+-1 siginifica que ele pesquisoou dentrodo vetor e não encontrou nenhuma ocorrencia 

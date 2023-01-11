@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+    <style>
+        body{
+            background: rgb(54, 50, 50);
+            color: white;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Indicador de dia da semana!</h1>
+    <p>Confira aqui em qual dia da semana você está!</p>
+    <input type="button" value="Conferir" onclick="conferir()">       
+    <input type="button" value="Zerar" onclick="zerar()">         
+    <br />
+    <br />
+    <div id="res">Dia da semana</div>
+    <script>
+        var res = window.document.querySelector('div#res')
+
+       function conferir(){
+            var res = window.document.querySelector('div#res')
+            var diaSem = new Date()
+            var resDia = diaSem.getDay()
+
+
+            switch(resDia){
+                 case 0:
+                    res.innerHTML = 'Hoje é Domingo'
+                    break
+                case 1: 
+                    res.innerHTML = 'Hoje é Segunda'
+                    break  
+                case 2:
+                    res.innerHTML = 'Hoje é Terça'
+                    break
+                case 3: 
+                    res.innerHTML = 'Hoje é Quarta'
+                    break
+                case 4:
+                    res.innerHTML = 'Hoje é Quinta'
+                    break
+                case 5:
+                    res.innerHTML = 'Hoje é Sexta'
+                    break
+                case 6:
+                    res.innerHTML = 'Hoje é Sabado'
+                        }
+
+         }
+
+         function zerar(){
+             res.innerHTML = 'Dia da semana'
+         }
+    </script>
+
+</body>
+</html>

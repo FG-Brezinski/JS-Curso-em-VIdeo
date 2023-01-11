@@ -1,0 +1,88 @@
+-----------------------------------Arvore DOM------------------------------------
+
+Significa Document
+          Object
+	  Model
+
+A raiz do arvore DOM e se chama "window"
+			location Document History
+
+E dentro do window tem a locatin que diz qual é a localizaçaõ do meu site,URL, a 
+pagina atual, pagina anterior
+
+Tem o document q é o documento atual da sua pagina
+
+O history que guarda da onde vc veio, e aonde vc vai.
+
+Dentro do Document existe o HTML e dentro do HTML existe o head e o body
+
+Existe varias formas de navegar dentro dos 
+elementos(Elementos são tudo que existe dentro do DOM)
+
+toda div é representada por uma #
+
+toda classe é representado por um ponto .
+
+
+---------------------Metodos de navegação-----------------------------
+
+--------------------------------------------------->Por Marca
+------------------------------------>getElementsByTagName(){
+
+var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('esta escrito assim: ' + p1.innerHTML)
+        p1.style.color = 'blue'
+        corpo.style.background = 'black'
+}
+innerText pega só o texto enquanto o innerHTML pega o HTML!!!
+
+
+-------------------------------------------------->Por ID
+-------------------------------------> getElementByld(){
+
+ <div id="msg">Clique em mim</div>
+
+ var d = window.document.getElementById('msg')
+
+        d.style.background = 'green'
+
+        //d.innerText = 'Estou aguardando...'  //simplificado 
+
+        window.document.getElementById('msg').innerText = 'Olá' // completo
+}
+
+------------------------------------------------------>Por Nome
+-------------------------------------------->getElementsByName{
+
+ <div name="msg">Clique em mim</div>
+
+
+ var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'
+
+}
+
+--------------------------------------------------------Por Classe
+------------------------------------------->getElementsByClassName{
+
+ <div class="msg">Clique em mim</div>
+
+
+ var d = window.document.getElementsByClassName('msg')[0]
+        d.innerText = 'Olá' 
+
+}
+
+-------------------------------------------------------->Por Seletor
+------------------------------->querySelector() / querySelectorAll(){
+
+ <div class="msg">Clique em mim</div>
+
+
+ var d = window.document.querySelector('div.msg')
+ d.style.background = 'blue'
+
+
+
+

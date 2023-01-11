@@ -1,0 +1,105 @@
+-----------------------------------------------------------------VARIAVEIS.JS----------------------------------------------------------
+
+-> Variaveis servem para guardar dados
+
+->Podem começar com letra, $ ou _ 
+
+->Não podem começar com numeros
+
+->É possivel usar letras ou numeros
+
+->É possivel utilizar acentos e simbolos
+
+->Não podem coter espaços
+
+->Não podem ser palavras reservadas "var" "Alert"
+
+->Letras minusculas e maiusculas fazem diferenças
+
+->Escolher nomes coerentes para as variaveis
+
+-> tipos de variaveis: number, string, boolean, null, undefined, object, function
+
+-> para numeros se ultiliza "number"
+|
+|_> separados por "infinity" e "NaN"
+
+->Para lestras utiliza-se "string"
+
+-> para verdadeiro e falso utiliza-se "boolean"
+
+-> o comando "typeof" diz que tipo de variavel esta recebendo 
+
+EX:
+{
+var n = 200
+	typeof n
+		'number'
+
+ var n = google
+	typeof n 
+		'string'
+
+ typeof "6.5"
+	'string'
+
+typeof [6.5]
+	'object'
+
+typeof {6.5}
+	'object'
+
+typeof function(){}
+	'function'
+
+typeof undefined
+	'undefined'
+
+typeof NaN
+	'number'
+
+typeof infinity
+	'number'
+
+typeof null
+	'object'
+
+}
+
+null -> não tem nenhum valor
+
+-------------------------Formatando strings----------------------
+
+var s = 'JavaSript'
+
+	'Eu estou aprendendo s' //não faz interpolação
+	'Eu estou aprendendo' + s //usa concatenação
+	`Eu estou aprendendo &{s}` //usa template string
+
+var s = 'JavaSript'
+
+	s.length  // quantos caracteres a stirng tem
+	s.toUpperCase()  // Tranforma tudo para 'MAIUSCULAS'
+	s.toLowerCase()  // Tranforma tudo em 'minusculas'
+
+-------------------------Formatando Numeros----------------------
+	
+var n1 = 1545.5
+
+> n1.toFixed(2) //deixa com duas casas
+'1545.50'
+
+> n1.toFixed(2).replace('.',',') // troca "." por ","
+'1545,50'
+
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // Formata direto para a moeda do pais selecionado 
+'R$ 1.545,50'
+
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUS'})
+'EUS 1.545,50'
+
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUr'})
+'€ 1.545,50'
+
+
+

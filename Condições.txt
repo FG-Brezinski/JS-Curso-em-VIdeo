@@ -1,0 +1,44 @@
+------------------------------Condições--------------------------
+
+Condições Aninhadas
+-São condições dentro de outras condições 
+--Ex:
+	
+	if (cond1){
+		Bloco 1
+	}else{
+	
+		if(cond2){
+			bloco2
+		}else{
+			Bloco3
+		}
+	
+	}
+	
+Condições Multiplas
+
+-Switch (É uma expressão!)
+
+-Eu tenho uma expressõa que testa varios valores, e volta 
+para o fluxo normal
+-Ex:
+	
+	Switch(expressão){
+		case valor1:
+		
+		break;
+		
+		case valor2:
+		
+		break;
+		
+		case valor3:
+		
+		break;
+		
+		default:
+		
+		break;
+		
+	}
